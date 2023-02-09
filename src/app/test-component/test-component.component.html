@@ -1,0 +1,148 @@
+<!-- 
+    <div class="container mt-4 text-white shadow p-3 md-5 bg-dark rounded">
+        <form #mediaItem="ngForm" (ngSubmit)="onSubmit(mediaItem.value)">
+            <div class="form group font-weight-bold text-success text-centre col-md-12">
+                <h2>Add Media To Watch</h2>
+            </div>
+              <div class="row">
+                <div class="form-group font-weight-bold text-light col-md-4">
+                    <label>Name</label>
+                    <input type="text" class="form-control" name="name" ngModel />
+                </div>
+                <div class="form-group text-light font-wight-bold col-md-3">
+                    <label>Medium</label>
+                    <select name="medium" class="form-control" ngModel>
+              <option value="choice">Choice....</option>
+              <option value="Movies">Movies</option>
+              <option value="Series">Series</option>
+            </select>
+                </div>
+
+                <div class="form-group text-light font-weight-bold col-md-3">
+                    <label>Category</label>
+                    <select name="category" class="form-control" ngModel>
+              <option value="Action">Action</option>
+              <option value="Science Friction">Science Friction</option>
+            </select>
+                </div>
+                <div class="form-group text-light font-weight-bold col-md-2">
+                    <label>Year</label>
+                    <input type="date" name="year" ngModel />
+                </div>
+                <button class="btn btn-primary">Save</button>
+            </div>
+        </form>
+    </div> -->
+<!-- <form (ngSubmit)="onSubmit(myForm)" #myForm="ngForm">
+    <div class="form-group">
+        <label>Username</label> <br>
+        <input ngModel name="username" class="form-control" type="text" placeholder="Enter username">
+    </div>
+    <div class="form-group">
+        <label>Email</label><br>
+        <input ngModel name="email" class="form-control" type="email" placeholder="Enter Email">
+    </div>
+    <div class="form-group">
+        <label class="form-check-label">Select Course</label>
+        <select ngModel name="course" id="course" class="form-control">
+                    <option value="Angular">Angular</option>
+                    <option value="Angular1">Angular1</option>
+                    <option value="Angular2">Angular2</option>
+                    <option value="Angular3">Angular3</option>
+                </select>
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+</form>
+
+<input type="text" [(ngModel)]="name">
+<p>{{name}}</p>
+ -->
+
+<!-- <header>
+    <h2>Add Media To Watch</h2>
+</header>
+<form #MediaItem="ngForm" (ngSubmit)="onSubmit(mediaItem.value)">
+    <label>Medium</label>
+    <select name="medium" ngModel>
+    <option value="Movies">Movies</option>
+    <option value="Series">Series</option>
+</select>
+    <label>Name</label>
+    <input type="text" name="name" ngModel>
+    <label>Category</label>
+    <select name="category" ngModel>
+    <option value="Action">Action</option>
+    <option value="Science Friction">Science Friction</option>
+</select>
+    <label>Year</label>
+    <input type="text" name="year" ngModel>
+    <button>Save</button>
+</form>
+ -->
+
+<!-- ======================Custom pipes================= -->
+<!-- <div style="font-size: 50px;">{{200|PowerPipe}}</div>
+<div style="font-size: 50px;">SI => {{100 | CI : 20 : 2}}</div>
+<br>
+<div style="font-size: 50px;color:red">{{500000|GrossSalary:5:3:2}}</div> -->
+
+<!-- <button CustomD='OnClick()'> Host Listener click</button> -->
+<!-- <br><br> -->
+<!-- <button (mouseover)="OnMouse()"> HostListener Mouse hover </button> -->
+
+<!-- <div [ngClass]="variable"> variable</div>
+<br>
+<div [ngClass]="'heading footer'">
+    ngClass
+</div>
+<br>
+<div [ngClass]="[ 'heading','footer']">
+    ngClass listed On array
+</div>
+<br>
+<div [ngClass]="{'heading':true,'footer':false}">
+    ngClass listen at object
+</div>
+<br>
+<button [ngStyle]="{'color':'red'}"> button </button>
+<br> <br>
+<div [ngStyle]="{'color':'red','background-color':'black','font-size':'30px','font-weight':'bold'}">
+    ngStyle
+</div> -->
+
+<!-- <button> btn-primary </button> -->
+
+<!-- <p> Welcome {{name}}</p> -->
+
+<!-- <h1 [innerHTML]='name'></h1> -->
+
+<!-- <p [style.display]="display">hello</p> -->
+<!-- 
+<button class="btn btn-danger" (click)="add()"> Delete</button><br><br>
+<button class="btn btn-danger" (click)="onSave()">Save</button> -->
+
+<!-- ==============================appcompent.html===========================
+
+
+ <section>
+    <media-item *ngFor="let MediaItem of MediaItem" (delete)="onMediaItemDelete($event)" [MediaItem]="MediaItem"></media-item>
+</section>
+-->
+
+<!-- <h1 class="desc">MY-APP</h1>
+<h2 id="ide">ANGULAR</h2>
+<p >NODE</p> -->
+<!-- inline css can take first rather than internal css like style tag in html  -->
+<!-- <style>
+    .gl {
+        background-color: cadetblue;
+    }
+</style> -->
+<!--  -->
+
+<!-- <p style="background-color: darkmagenta;" class="gl">GLOBAL CSS</p> -->
+<!-- <div type class="btn btn-primary">BOOTSTRAP</div> -->
+<!-- <h1 [innerHTML]="FirstMediaItem.id"></h1> -->
+
+<!-- <media-item [MediaItem]="FirstMediaItem"></media-item> -->
+<!-- <media-item [MediaItem]="FirstMediaItem"></media-item> -->

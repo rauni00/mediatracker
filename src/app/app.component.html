@@ -1,0 +1,9 @@
+<app-test-component></app-test-component>
+<app-form-builder></app-form-builder>>
+<section>
+    <div class="container">
+        <div class="row">
+            <media-item *ngFor="let MediaItem of MediaItem" (delete)="onMediaItemDelete($event)" [MediaItem]="MediaItem"></media-item>
+        </div>
+    </div>
+</section>

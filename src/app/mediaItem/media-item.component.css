@@ -1,0 +1,121 @@
+.is-favorite {
+    color: rgb(129, 218, 149);
+}
+
+.is-favoriteHover:hover {
+    color: rgb(199, 72, 72);
+    /* font-weight: bold; */
+}
+
+
+/*  */
+
+
+/*  */
+
+
+/*  */
+
+
+/*  */
+
+
+/*  */
+
+
+/*  */
+
+
+/*  */
+
+
+/*  */
+
+
+/*  */
+
+
+/*  */
+
+
+/*  */
+
+.delete {
+    color: chartreuse;
+}
+
+.delete:hover {
+    font-weight: bold;
+    border-color: chartreuse;
+}
+
+.watch {
+    color: darkblue;
+    background-color: darkgoldenrod;
+}
+
+.watch:hover {
+    border-color: darkblue;
+    font-weight: bold;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+
+.toggle {
+    color: rgb(218, 67, 67);
+}
+
+
+/* .is-favorite:hover {
+    color: rgb(207, 0, 0);
+    border-color: red;
+    border-bottom: 2px;
+} */
+
+
+/* .rede {
+    padding: 10px;
+    margin: 5px;
+    width: 1200px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: rgb(183, 235, 217);
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 70px;
+    padding: 15px;
+}
+
+p {
+    padding: 5px;
+}
+
+.btn-primary,
+.btn-success {
+    /* background-color: yellow; */
+
+
+/* width: 400px;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.dil {
+    color: white;
+}
+
+.dil:hover {
+    color: red; */
+
+
+/* } */
+
+
+/* button {
+     /* margin-left: 400px; */
+
+
+/* } */

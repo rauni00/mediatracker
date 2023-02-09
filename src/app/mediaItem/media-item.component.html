@@ -1,0 +1,125 @@
+<div class="conatiner-flex">
+    <div class="col-lg-12">
+        <div class="jumbotron bg-dark text-white">
+            <h1 miFavorite class="display-3">{{ MediaItem.name }}</h1>
+            <hr class="my-4" />
+            <p class="lead mb-0">
+                <strong> Watched on :</strong> <br /> {{ MediaItem.watchOn }}
+            </p>
+            <p class="lead mb-0">
+                <strong> Movie Type :</strong> <br /> {{ MediaItem.medium }}
+            </p>
+            <p class="lead mb-0">
+                <strong>Movie Category :</strong> <br /> {{ MediaItem.category }}
+            </p>
+            <p class="lead mb-0">
+                <strong> Released Year :</strong> <br />{{ MediaItem.year }}
+            </p>
+            <p *ngIf="MediaItem.Desc">
+                <strong> Movie Review :</strong><br />{{ MediaItem.Desc | uppercase | slice: 0:20 }}
+            </p>
+            <div class="row">
+                <div class="col-lg-2 col-md-6">
+                    <a miFavorite href="#" style="font-size: large"><i style="font-size: xx-large" class="fas fa-heart heart"></i
+          ></a>
+                </div>
+                <div class="col-lg-4 mb-2 col-md-6">
+                    <a miFavorite class="btn btn-danger" (click)="onMediaItemDelete()">
+            Delete</a
+          >
+        </div>
+        <div class="col-lg-4 md-2 col-md-6">
+          <a [ngClass]="'watch'" href="# " class="btn btn-success"> Watch </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+
+=========================Angular Pipes============================= 
+1 Predefine pipes 2 Custom Pipes
+<div>{{ MediaItem | categoryList }}</div>
+-->
+<!-- <h1 CustomD>Creating a Custom Attribute Directive</h1> -->
+<!-- <div class="container"> -->
+
+<!-- ========================== Structural directive ===========================-->
+<!-- *ngIf="MediaItem.watchOn " -->
+<!-- *ngFor="MediaItem.watchOn " -->
+<!-- ============================ -->
+<!-- [ngClass]="'delete'" -->
+<!-- <a [ngClass]="varName" href="# " class="btn">byVar</a> bind by variable-->
+<!-- <a [ngStyle]="varStyle" href="# " class="btn"> varStyle </a> -->
+<!-- [ngClass]="['delete','watch']" -->
+<!-- [ngStyle]="{'property':'value'}" -->
+
+<!-- =====================  Method binding in native click event ======================== -->
+<!-- (click)="onDeleteItem() -->
+<!-- =========================================================== -->
+<!-- <div class="rede ">
+    <h1>The Redemption
+    </h1>
+    <hr> Watched on:
+    <p>19/02/2019</p>
+    Movie Type:
+    <p>Suspense ,thriller</p>
+    Released Year:
+    <p>2019</p>
+    Movie Review:
+    <p>This is the Best Movie I Have Ever Seen. It is a good movie for all time thrilling experience for me.
+    </p>
+    <p class="dil ">❤<button class="btn btn-primary ">Remove</button> <button class="btn btn-success ">Watch</button></p>
+
+    <a (click)="onDeleteItem() " class="btn btn-danger "> Delete</a>
+    <button> Delete</button> -->
+
+<!-- </div> -->
+<!-- -->
+
+<!-- ============================EVENT BINDING=========================
+
+=> event binding is listen and response when the user click or mouse response
+
+
+
+
+-->
+<!--
+   ============================= PROPERTY BINDING ===========================================
+<div class="rede ">
+    <h1 [innerText]='movie_name'>
+    </h1>
+    <hr> Watched on:
+    <p [innerHTML]='date|date'></p>
+    Movie Type:
+    <p [innerHTML]='Movie_type'></p>
+    Released Year:
+    <p [innerHTML]='year'></p>
+    Movie Review:
+    <p [innerHTML]='M_rev'></p>
+    <p class="dil ">❤❤❤❤❤❤ <button class="btn btn-primary ">Remove</button> <button class="btn btn-success ">Watch</button></p>
+</div>
+
+=============================INTERPOLATION======================================================
+<div class="rede ">
+    <h1 >{{}}
+    </h1>
+    <hr> Watched on:
+    <p >{{}}</p>
+    Movie Type:
+    <p >{{}}</p>
+    Released Year:
+    <p >{{}}</p>
+    Movie Review:
+    <p >{{}}</p>
+    <p class="dil ">❤❤❤❤❤❤ <button class="btn btn-primary ">Remove</button> <button class="btn btn-success ">Watch</button></p>
+</div>
+-->
+<!--property-Binding  => 1  set values for properties of HTML elements or directives
+    2  Use property binding to do things such as toggle button functionality, set paths programmatically 
+                        3  and share values between components.
+-->
+
+<!--Attribute and property are not same-->
